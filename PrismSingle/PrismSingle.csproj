@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppStart\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

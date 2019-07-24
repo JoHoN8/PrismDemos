@@ -1,13 +1,7 @@
-﻿using CommonServiceLocator;
-using Prism.Ioc;
+﻿using Prism.Ioc;
+using Prism.Modularity;
 using Prism.Unity;
 using PrismSingle.Views;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace PrismSingle
@@ -24,6 +18,11 @@ namespace PrismSingle
         protected override Window CreateShell()
         {
             return Container.Resolve<Shell>();
+        }
+
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            return new ConfigurationModuleCatalog();
         }
 
     }
