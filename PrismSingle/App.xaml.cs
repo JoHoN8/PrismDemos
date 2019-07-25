@@ -2,7 +2,9 @@
 using Prism.Modularity;
 using Prism.Unity;
 using PrismSingle.Views;
+using NavModule;
 using System.Windows;
+using PrismSingle.AppStart;
 
 namespace PrismSingle
 {
@@ -20,9 +22,15 @@ namespace PrismSingle
             return Container.Resolve<Shell>();
         }
 
-        protected override IModuleCatalog CreateModuleCatalog()
+        protected override void InitializeShell(Window win)
         {
-            return new ConfigurationModuleCatalog();
+            
+        }
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            var modLoader = new LoadModules();
+            modLoader.Init(moduleCatalog);
+
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Prism.Modularity;
+using System.Windows;
 
 namespace PrismSingle.Views
 {
@@ -7,7 +8,7 @@ namespace PrismSingle.Views
     /// </summary>
     public partial class Shell : Window
     {
-        public Shell()
+        public Shell(IModuleManager moduleManager)
         {
             InitializeComponent();
         }
