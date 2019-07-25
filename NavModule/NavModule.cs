@@ -6,7 +6,7 @@ using System;
 
 namespace NavModule
 {
-    public class NavModuleModule : IModule
+    public class NavModule : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {

@@ -13,7 +13,7 @@ namespace PrismSingle.AppStart
     {
         public void Init(IModuleCatalog moduleCatalog)
         {
-            var NavModule = typeof(NavModuleModule);
+            var NavModule = typeof(NavModule.NavModule);
 
             moduleCatalog.AddModule(new ModuleInfo()
             {

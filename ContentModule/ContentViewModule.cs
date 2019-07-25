@@ -15,9 +15,9 @@ namespace ContentModule
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(BlueView));
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(RedView));
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(GreenView));
+            regionManager.RegisterViewWithRegion("ContentRegion", typeof(Blue));
+            regionManager.RegisterViewWithRegion("ContentRegion", typeof(Red));
+            regionManager.RegisterViewWithRegion("ContentRegion", typeof(Green));
 
         }
 

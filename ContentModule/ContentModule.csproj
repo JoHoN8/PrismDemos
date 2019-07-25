@@ -78,14 +78,17 @@
   <ItemGroup>
     <Compile Include="ContentViewModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\BlueView.xaml.cs">
-      <DependentUpon>BlueView.xaml</DependentUpon>
+    <Compile Include="ViewModels\BlueViewModel.cs" />
+    <Compile Include="ViewModels\GreenViewModel.cs" />
+    <Compile Include="ViewModels\RedViewModel.cs" />
+    <Compile Include="Views\Blue.xaml.cs">
+      <DependentUpon>Blue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\GreenView.xaml.cs">
-      <DependentUpon>GreenView.xaml</DependentUpon>
+    <Compile Include="Views\Green.xaml.cs">
+      <DependentUpon>Green.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RedView.xaml.cs">
-      <DependentUpon>RedView.xaml</DependentUpon>
+    <Compile Include="Views\Red.xaml.cs">
+      <DependentUpon>Red.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -93,15 +96,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Views\BlueView.xaml">
+    <Page Include="Views\Blue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\GreenView.xaml">
+    <Page Include="Views\Green.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\RedView.xaml">
+    <Page Include="Views\Red.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ContentModule.Views
 {
     /// <summary>
-    /// Interaction logic for GreenView.xaml
+    /// Interaction logic for RedView.xaml
     /// </summary>
-    public partial class GreenView : UserControl
+    public partial class Red : UserControl
     {
-        public GreenView()
+        public Red()
         {
             InitializeComponent();
         }
