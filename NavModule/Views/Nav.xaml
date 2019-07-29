@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="NavModule.Views.NavView"
+﻿<UserControl x:Class="NavModule.Views.Nav"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <Button Margin="0 1" Content="Electronic Crash Report" Click="EleCrashReport_click"></Button>
-        <Button Margin="0 1" Content="FR Letter Errors" Click="FrLetterError_click"></Button>
-        <Button Margin="0 1" Content="Purge Errors" Click="PurgeErrors_click"></Button>
+        <Button Margin="0 1" Content="Red View" Click="Red_Click"></Button>
+        <Button Margin="0 1" Content="Blue View" Click="Blue_Click"></Button>
+        <Button Margin="0 1" Content="Green View" Click="Green_Click"></Button>
     </StackPanel>
 </UserControl>

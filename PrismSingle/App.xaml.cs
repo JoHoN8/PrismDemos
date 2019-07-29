@@ -2,7 +2,6 @@
 using Prism.Modularity;
 using Prism.Unity;
 using PrismSingle.Views;
-using NavModule;
 using System.Windows;
 using PrismSingle.AppStart;
 
