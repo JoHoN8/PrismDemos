@@ -1,4 +1,6 @@
-﻿using NavModule.Views;
+﻿using ContentModule.ViewModels;
+using ContentModule.Views;
+using NavModule.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
@@ -11,13 +13,12 @@ namespace NavModule
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("NavRegion", typeof(NavView));
+            regionManager.RegisterViewWithRegion("NavRegion", typeof(Nav));
 
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
         }
     }
 }

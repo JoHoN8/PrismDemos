@@ -1,4 +1,5 @@
-﻿using ContentModule.Views;
+﻿using ContentModule.ViewModels;
+using ContentModule.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
@@ -12,18 +13,14 @@ namespace ContentModule
 {
     public class ContentViewModule : IModule
     {
+
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(Blue));
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(Red));
-            regionManager.RegisterViewWithRegion("ContentRegion", typeof(Green));
 
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
         }
     }
 }
