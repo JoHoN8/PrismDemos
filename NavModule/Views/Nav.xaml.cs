@@ -38,7 +38,9 @@ namespace NavModule.Views
             _region.Add(_blue);
             _region.Deactivate(_blue);
             _region.Add(_red);
+            _region.Deactivate(_red);
             _region.Add(_green);
+            _region.Deactivate(_green);
 
             _moduleManager = moduleManager;
             _moduleManager.LoadModule("ContentViewModule");
@@ -66,7 +68,10 @@ namespace NavModule.Views
         {
             var useableView = _region.ActiveViews.ToList();
 
-            _region.Deactivate(useableView[0]);
+            if (useableView.Count > 0)
+            {
+                _region.Deactivate(useableView[0]);
+            }
         }
     }
 }
